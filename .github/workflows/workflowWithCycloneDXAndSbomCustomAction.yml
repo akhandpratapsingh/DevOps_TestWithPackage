@@ -48,7 +48,7 @@ jobs:
           
       - name: Commit and Push Changes
         run: |
-          cd akhandpratapsingh/DevOps_Test_Package
+          cd ./
           git config user.name "akhandpratapsingh"
           git config user.email "akhand123singh@gmail.com"
           git add bom.json
