@@ -41,7 +41,7 @@ jobs:
         with:
           path: ./
           output: './sbom.json'
-#           github-bearer-token: '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'
+#           github-bearer-token: 
           
       - name: Commit and Push Changes
         run: |
