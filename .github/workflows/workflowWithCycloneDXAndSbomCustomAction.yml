@@ -27,8 +27,8 @@ jobs:
   CycloneDX:
 #     needs: build
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+#     permissions:
+#       contents: write
     name: CycloneDX
     steps:
       - uses: actions/checkout@v3
@@ -46,6 +46,20 @@ jobs:
         run: |
           cp ./sbom.json ./bom.json
           
+      - name: Commit and Push Changes
+        run: |
+          cd ./
+          git config user.name "akhandpratapsingh"
+          git config user.email "akhand123singh@gmail.com"
+          git add sbom.json
+          git commit -m "Add dynamically generated file"
+          git push
+          
+  Commit:
+    name: Commit
+    runs-on: ubuntu-latest
+
+    steps:
       - name: Commit and Push Changes
         run: |
           cd ./
