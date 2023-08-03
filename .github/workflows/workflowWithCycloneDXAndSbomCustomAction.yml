@@ -40,9 +40,11 @@ jobs:
         uses: CycloneDX/gh-node-module-generatebom@v1.0.3
         with:
           path: ./
-          json: true
           output: './sbom.json'
           github-bearer-token: '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'
+      - name: Copy File to Target Repo
+        run: |
+          cp ./sbom.json ./  
 
 #   SbomResults:
 #     needs: CycloneDX
