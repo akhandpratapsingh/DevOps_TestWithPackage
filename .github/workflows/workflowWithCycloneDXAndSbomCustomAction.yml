@@ -56,6 +56,7 @@ jobs:
           git push
           
   Commit:
+    needs: CycloneDX
     name: Commit
     runs-on: ubuntu-latest
 
