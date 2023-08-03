@@ -41,10 +41,19 @@ jobs:
         with:
           path: ./
           output: './sbom.json'
-          github-bearer-token: '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'
+#           github-bearer-token: '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'
       - name: Copy File to Target Repo
         run: |
-          cp ./sbom.json ./  
+          cp ./sbom.json akhandpratapsingh/DevOps_Test_Package
+          
+      - name: Commit and Push Changes
+        run: |
+          cd target-repo-path
+          git config user.name "akhandpratapsingh"
+          git config user.email "akhand123singh@gmail.com"
+          git add sbom.json
+          git commit -m "Add dynamically generated file"
+          git push
 
 #   SbomResults:
 #     needs: CycloneDX
