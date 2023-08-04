@@ -51,28 +51,6 @@ jobs:
           git add sbom.json
           git commit -m "Add dynamically generated file"
           git push
-          
-  Commit:
-    needs: CycloneDX
-    name: Commit
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        
-      - name: Copy File to Target Repo
-        run: |
-          cp ./sbom.json ./bom.json
-          
-      - name: Commit and Push Changes
-        run: |
-          cd ./
-          git config user.name "akhandpratapsingh"
-          git config user.email "akhand123singh@gmail.com"
-          git add bom.json
-          git commit -m "Add dynamically generated file"
-          git push
 
 #   SbomResults:
 #     needs: CycloneDX
