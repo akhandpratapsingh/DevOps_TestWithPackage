@@ -32,25 +32,25 @@ jobs:
     name: CycloneDX
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '16'
-      - run: npm install
-      - name: CycloneDX Node.js Generate SBOM
-        uses: CycloneDX/gh-node-module-generatebom@v1.0.3
-        with:
-          path: ./
-          output: 'sbom.json'
+      # - uses: actions/setup-node@v3
+      #   with:
+      #     node-version: '16'
+      # - run: npm install
+      # - name: CycloneDX Node.js Generate SBOM
+      #   uses: CycloneDX/gh-node-module-generatebom@v1.0.3
+      #   with:
+      #     path: ./
+      #     output: 'sbom.json'
 #           github-bearer-token: 
           
-      - name: Commit and Push Changes
-        run: |
-          cd ./
-          git config user.name "akhandpratapsingh"
-          git config user.email "akhand123singh@gmail.com"
-          git add sbom.json
-          git commit -m "Add dynamically generated file"
-          git push
+      # - name: Commit and Push Changes
+      #   run: |
+      #     cd ./
+      #     git config user.name "akhandpratapsingh"
+      #     git config user.email "akhand123singh@gmail.com"
+      #     git add sbom.json
+      #     git commit -m "Add dynamically generated file"
+      #     git push
           
       - name: ServiceNow DevOps SBOM Scan Results
         uses: akhandpratapsingh/custom-actions-task@SBOM
