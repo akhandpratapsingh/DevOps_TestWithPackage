@@ -32,16 +32,15 @@ jobs:
     name: CycloneDX
     steps:
       - uses: actions/checkout@v3
-      # - uses: actions/setup-node@v3
-      #   with:
-      #     node-version: '16'
-      # - run: npm install
-      # - name: CycloneDX Node.js Generate SBOM
-      #   uses: CycloneDX/gh-node-module-generatebom@v1.0.3
-      #   with:
-      #     path: ./
-      #     output: 'sbom.json'
-#           github-bearer-token: 
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - run: npm install
+      - name: CycloneDX Node.js Generate SBOM
+        uses: CycloneDX/gh-node-module-generatebom@v1.0.3
+        with:
+          path: ./
+          output: 'sbom.json'
           
       # - name: Commit and Push Changes
       #   run: |
