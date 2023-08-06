@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.3",
-  "serialNumber": "urn:uuid:eb8f6aaa-699b-4049-8b4e-8e8d78a20e65",
+  "serialNumber": "urn:uuid:eae2aca8-84ec-447b-b1e1-85957213c89c",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-08-03T16:44:15.830Z",
+    "timestamp": "2023-08-06T14:03:44.509Z",
     "tools": [
       {
         "vendor": "CycloneDX",
@@ -304,15 +304,15 @@
     },
     {
       "type": "library",
-      "bom-ref": "pkg:npm/%40types/node@20.4.6",
+      "bom-ref": "pkg:npm/%40types/node@20.4.8",
       "group": "@types",
       "name": "node",
-      "version": "20.4.6",
+      "version": "20.4.8",
       "description": "TypeScript definitions for Node.js",
       "hashes": [
         {
           "alg": "SHA-512",
-          "content": "ab4464bcd80cc1e59622f48c0e25e17e519428c748c41a36336b5833fd241060ee7900721732b8299020bb9607185371ce24e5a693694c805ca87400c657c774"
+          "content": "d261dc91fe83d8388803387c7ccf1fdc7402bcc283a4af78610d0349591f5931bd05995e6085ae770f5c2715fca0293d6ccfaf0240f2ba30d5e9d98a1dbbd0a6"
         }
       ],
       "licenses": [
@@ -322,7 +322,7 @@
           }
         }
       ],
-      "purl": "pkg:npm/%40types/node@20.4.6",
+      "purl": "pkg:npm/%40types/node@20.4.8",
       "externalReferences": [
         {
           "type": "website",
@@ -5240,15 +5240,15 @@
     },
     {
       "type": "library",
-      "bom-ref": "pkg:npm/electron-to-chromium@1.4.482",
+      "bom-ref": "pkg:npm/electron-to-chromium@1.4.485",
       "author": "Kilian Valkhof",
       "name": "electron-to-chromium",
-      "version": "1.4.482",
+      "version": "1.4.485",
       "description": "Provides a list of electron-to-chromium version mappings",
       "hashes": [
         {
           "alg": "SHA-512",
-          "content": "87e52aa5f984af5424934ce9ede8ff8e277b097a2ae26e10cd6eb03536f410b27f0590a9038c2053294120c1827badb5b67af8979566a078dda12c7695b9cd24"
+          "content": "d67750e4804d127162acfc2fcae77af461cbfb7d45904d3d807fc227a9b72826e4c778b41153ab8f0cf850dc5198df47f0e5476c2eaf311646375c82be34acf7"
         }
       ],
       "licenses": [
@@ -5258,7 +5258,7 @@
           }
         }
       ],
-      "purl": "pkg:npm/electron-to-chromium@1.4.482",
+      "purl": "pkg:npm/electron-to-chromium@1.4.485",
       "externalReferences": [
         {
           "type": "website",
@@ -10673,15 +10673,15 @@
     },
     {
       "type": "library",
-      "bom-ref": "pkg:npm/resolve@1.22.2",
+      "bom-ref": "pkg:npm/resolve@1.22.4",
       "author": "James Halliday",
       "name": "resolve",
-      "version": "1.22.2",
+      "version": "1.22.4",
       "description": "resolve like require.resolve() on behalf of files asynchronously and synchronously",
       "hashes": [
         {
           "alg": "SHA-512",
-          "content": "49bfa68cd1ce50bb01bfcd7c4f8d2a48f7918ae58bc9a18c6b97b0c9d44b1629a77a2c66572db3762bd197e005ea36983c2f044711839854a2aae8ba49f3ddfa"
+          "content": "3d735d0a23ea0ea794a2efb0d42d9e4d06cd7f1292b8cc6a4c2baf96698cb24d4d5872f97d1ae163a3e5d2a11861cebe42a18295ca35423f179e33de828e307e"
         }
       ],
       "licenses": [
@@ -10691,7 +10691,7 @@
           }
         }
       ],
-      "purl": "pkg:npm/resolve@1.22.2",
+      "purl": "pkg:npm/resolve@1.22.4",
       "externalReferences": [
         {
           "type": "website",
@@ -10709,15 +10709,15 @@
     },
     {
       "type": "library",
-      "bom-ref": "pkg:npm/is-core-module@2.12.1",
+      "bom-ref": "pkg:npm/is-core-module@2.13.0",
       "author": "Jordan Harband",
       "name": "is-core-module",
-      "version": "2.12.1",
+      "version": "2.13.0",
       "description": "Is this specifier a node.js core module?",
       "hashes": [
         {
           "alg": "SHA-512",
-          "content": "43866e0407b6154b0ab72409a101e5bcff0ebc1111c4ede3126cb523b85c457709046187161fda241b306d7b92f6c82b0c7d9050ef22964c0d3c7bc731df1c96"
+          "content": "67b764e90a3ca4e0a9de5e2db17d82e5955ab3857e531c10a1dc1984ba292fdd535fc532c8711769f3dcca879e5ae2ebc331dcaf78a03bbf3034bc07247b0c09"
         }
       ],
       "licenses": [
@@ -10727,7 +10727,7 @@
           }
         }
       ],
-      "purl": "pkg:npm/is-core-module@2.12.1",
+      "purl": "pkg:npm/is-core-module@2.13.0",
       "externalReferences": [
         {
           "type": "website",
@@ -23235,15 +23235,15 @@
     },
     {
       "type": "library",
-      "bom-ref": "pkg:npm/eslint-import-resolver-node@0.3.7",
+      "bom-ref": "pkg:npm/eslint-import-resolver-node@0.3.8",
       "author": "Ben Mosher",
       "name": "eslint-import-resolver-node",
-      "version": "0.3.7",
+      "version": "0.3.8",
       "description": "Node default behavior import resolution plugin for eslint-plugin-import.",
       "hashes": [
         {
           "alg": "SHA-512",
-          "content": "828cd6d9b94c2c909e169070ba02d31b2bd58cda1ea35927a275c071ab42e9b8cf0598ada2dc5d59fec68a6af6e4de1cd0000ea3878e51f686f362093c3a6a08"
+          "content": "b447be3e8936daa20668adcaa0c3fe37de865434bae81ff3adea1556689abcbbd150498646dbdbe01f303bd8f09dbf1dda5bc7b6b92167b503ef77560559dffd"
         }
       ],
       "licenses": [
@@ -23253,7 +23253,7 @@
           }
         }
       ],
-      "purl": "pkg:npm/eslint-import-resolver-node@0.3.7",
+      "purl": "pkg:npm/eslint-import-resolver-node@0.3.8",
       "externalReferences": [
         {
           "type": "website",
@@ -23374,42 +23374,6 @@
         {
           "type": "vcs",
           "url": "git+https://github.com/es-shims/Object.groupBy.git"
-        }
-      ]
-    },
-    {
-      "type": "library",
-      "bom-ref": "pkg:npm/resolve@1.22.3",
-      "author": "James Halliday",
-      "name": "resolve",
-      "version": "1.22.3",
-      "description": "resolve like require.resolve() on behalf of files asynchronously and synchronously",
-      "hashes": [
-        {
-          "alg": "SHA-512",
-          "content": "49bfa68cd1ce50bb01bfcd7c4f8d2a48f7918ae58bc9a18c6b97b0c9d44b1629a77a2c66572db3762bd197e005ea36983c2f044711839854a2aae8ba49f3ddfa"
-        }
-      ],
-      "licenses": [
-        {
-          "license": {
-            "id": "MIT"
-          }
-        }
-      ],
-      "purl": "pkg:npm/resolve@1.22.3",
-      "externalReferences": [
-        {
-          "type": "website",
-          "url": "https://github.com/browserify/resolve#readme"
-        },
-        {
-          "type": "issue-tracker",
-          "url": "https://github.com/browserify/resolve/issues"
-        },
-        {
-          "type": "vcs",
-          "url": "git://github.com/browserify/resolve.git"
         }
       ]
     },
@@ -24248,7 +24212,7 @@
       "hashes": [
         {
           "alg": "SHA-512",
-          "content": "49bfa68cd1ce50bb01bfcd7c4f8d2a48f7918ae58bc9a18c6b97b0c9d44b1629a77a2c66572db3762bd197e005ea36983c2f044711839854a2aae8ba49f3ddfa"
+          "content": "3d735d0a23ea0ea794a2efb0d42d9e4d06cd7f1292b8cc6a4c2baf96698cb24d4d5872f97d1ae163a3e5d2a11861cebe42a18295ca35423f179e33de828e307e"
         }
       ],
       "licenses": [
@@ -24347,15 +24311,15 @@
     },
     {
       "type": "library",
-      "bom-ref": "pkg:npm/eslint-plugin-testing-library@5.11.0",
+      "bom-ref": "pkg:npm/eslint-plugin-testing-library@5.11.1",
       "author": "Mario Beltrán Alarcón",
       "name": "eslint-plugin-testing-library",
-      "version": "5.11.0",
+      "version": "5.11.1",
       "description": "ESLint plugin to follow best practices and anticipate common mistakes when writing tests with Testing Library",
       "hashes": [
         {
           "alg": "SHA-512",
-          "content": "10b63b19e7e8fbad4e7d72a541e5cd2035552cf72f2937a240ea0c646f537ae59aecb9f8754351bfc25d45605023d31b6f8dbb5c695507569ad503d9c4124cf1"
+          "content": "e5e5fd7b529cd8fa9545e777b5a68b9c002a3d91845fbe42f8cfeb5f3500237c0883f671cd49b53950307defcefaf13ee985ce2deb527bd83918a0f679c5e2a7"
         }
       ],
       "licenses": [
@@ -24365,7 +24329,7 @@
           }
         }
       ],
-      "purl": "pkg:npm/eslint-plugin-testing-library@5.11.0",
+      "purl": "pkg:npm/eslint-plugin-testing-library@5.11.1",
       "externalReferences": [
         {
           "type": "website",
@@ -24419,15 +24383,15 @@
     },
     {
       "type": "library",
-      "bom-ref": "pkg:npm/%40types/eslint@8.44.1",
+      "bom-ref": "pkg:npm/%40types/eslint@8.44.2",
       "group": "@types",
       "name": "eslint",
-      "version": "8.44.1",
+      "version": "8.44.2",
       "description": "TypeScript definitions for eslint",
       "hashes": [
         {
           "alg": "SHA-512",
-          "content": "5e93437386794dbe31f925b532b88c55e22c32838d1c291614c911fda3c96f312cc6a1f2fb81a5bbf06a4dd3eb0297c378c6976ed361e9bb1e36097929a5ab4a"
+          "content": "b1d3d16fd2ba88be5764e981b9b83cca2169e724bf25d50342cab97ba87de649bdd4c09832ebe9ee68757e33c461486f1dea4aa593a39c468c051e0fc63583ce"
         }
       ],
       "licenses": [
@@ -24437,7 +24401,7 @@
           }
         }
       ],
-      "purl": "pkg:npm/%40types/eslint@8.44.1",
+      "purl": "pkg:npm/%40types/eslint@8.44.2",
       "externalReferences": [
         {
           "type": "website",
@@ -43862,7 +43826,7 @@
       ]
     },
     {
-      "ref": "pkg:npm/%40types/node@20.4.6"
+      "ref": "pkg:npm/%40types/node@20.4.8"
     },
     {
       "ref": "pkg:npm/color-name@1.1.4"
@@ -44093,7 +44057,7 @@
       "ref": "pkg:npm/expect@29.6.2",
       "dependsOn": [
         "pkg:npm/%40jest/expect-utils@29.6.2",
-        "pkg:npm/%40types/node@20.4.6",
+        "pkg:npm/%40types/node@20.4.8",
         "pkg:npm/jest-matcher-utils@29.6.2",
         "pkg:npm/jest-message-util@29.6.2",
         "pkg:npm/jest-util@29.6.2"
@@ -44524,7 +44488,7 @@
       "ref": "pkg:npm/caniuse-lite@1.0.30001519"
     },
     {
-      "ref": "pkg:npm/electron-to-chromium@1.4.482"
+      "ref": "pkg:npm/electron-to-chromium@1.4.485"
     },
     {
       "ref": "pkg:npm/node-releases@2.0.13"
@@ -44546,7 +44510,7 @@
       "ref": "pkg:npm/browserslist@4.21.10",
       "dependsOn": [
         "pkg:npm/caniuse-lite@1.0.30001519",
-        "pkg:npm/electron-to-chromium@1.4.482",
+        "pkg:npm/electron-to-chromium@1.4.485",
         "pkg:npm/node-releases@2.0.13",
         "pkg:npm/update-browserslist-db@1.0.11"
       ]
@@ -45130,7 +45094,7 @@
       "ref": "pkg:npm/lodash.debounce@4.0.8"
     },
     {
-      "ref": "pkg:npm/is-core-module@2.12.1"
+      "ref": "pkg:npm/is-core-module@2.13.0"
     },
     {
       "ref": "pkg:npm/path-parse@1.0.7"
@@ -45139,9 +45103,9 @@
       "ref": "pkg:npm/supports-preserve-symlinks-flag@1.0.0"
     },
     {
-      "ref": "pkg:npm/resolve@1.22.2",
+      "ref": "pkg:npm/resolve@1.22.4",
       "dependsOn": [
-        "pkg:npm/is-core-module@2.12.1",
+        "pkg:npm/is-core-module@2.13.0",
         "pkg:npm/path-parse@1.0.7",
         "pkg:npm/supports-preserve-symlinks-flag@1.0.0"
       ]
@@ -45150,7 +45114,7 @@
       "ref": "pkg:npm/%40babel/helper-define-polyfill-provider@0.4.2",
       "dependsOn": [
         "pkg:npm/lodash.debounce@4.0.8",
-        "pkg:npm/resolve@1.22.2"
+        "pkg:npm/resolve@1.22.4"
       ]
     },
     {
@@ -46839,7 +46803,7 @@
       "ref": "pkg:npm/doctrine@2.1.0"
     },
     {
-      "ref": "pkg:npm/eslint-import-resolver-node@0.3.7"
+      "ref": "pkg:npm/eslint-import-resolver-node@0.3.8"
     },
     {
       "ref": "pkg:npm/eslint-module-utils@2.8.0"
@@ -46849,9 +46813,6 @@
     },
     {
       "ref": "pkg:npm/object.groupby@1.0.0"
-    },
-    {
-      "ref": "pkg:npm/resolve@1.22.3"
     },
     {
       "ref": "pkg:npm/%40types/json5@0.0.29"
@@ -46879,11 +46840,10 @@
         "pkg:npm/array.prototype.flatmap@1.3.1",
         "pkg:npm/debug@3.2.7",
         "pkg:npm/doctrine@2.1.0",
-        "pkg:npm/eslint-import-resolver-node@0.3.7",
+        "pkg:npm/eslint-import-resolver-node@0.3.8",
         "pkg:npm/eslint-module-utils@2.8.0",
         "pkg:npm/object.fromentries@2.0.6",
         "pkg:npm/object.groupby@1.0.0",
-        "pkg:npm/resolve@1.22.3",
         "pkg:npm/tsconfig-paths@3.14.2"
       ]
     },
@@ -46984,7 +46944,7 @@
       "ref": "pkg:npm/eslint-plugin-react-hooks@4.6.0"
     },
     {
-      "ref": "pkg:npm/eslint-plugin-testing-library@5.11.0"
+      "ref": "pkg:npm/eslint-plugin-testing-library@5.11.1"
     },
     {
       "ref": "pkg:npm/eslint-config-react-app@7.0.1",
@@ -47000,14 +46960,14 @@
         "pkg:npm/eslint-plugin-jsx-a11y@6.7.1",
         "pkg:npm/eslint-plugin-react@7.33.1",
         "pkg:npm/eslint-plugin-react-hooks@4.6.0",
-        "pkg:npm/eslint-plugin-testing-library@5.11.0"
+        "pkg:npm/eslint-plugin-testing-library@5.11.1"
       ]
     },
     {
       "ref": "pkg:npm/%40types/estree@1.0.1"
     },
     {
-      "ref": "pkg:npm/%40types/eslint@8.44.1",
+      "ref": "pkg:npm/%40types/eslint@8.44.2",
       "dependsOn": [
         "pkg:npm/%40types/estree@1.0.1"
       ]
@@ -47018,7 +46978,7 @@
     {
       "ref": "pkg:npm/eslint-webpack-plugin@3.2.0",
       "dependsOn": [
-        "pkg:npm/%40types/eslint@8.44.1",
+        "pkg:npm/%40types/eslint@8.44.2",
         "pkg:npm/jest-worker@28.1.3"
       ]
     },
