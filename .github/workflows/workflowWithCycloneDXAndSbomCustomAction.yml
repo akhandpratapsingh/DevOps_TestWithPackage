@@ -61,6 +61,7 @@ jobs:
           context-github: ${{ toJSON(github) }}
           job-name: 'Servicenow SBOM Scan Results'
           file-name: './sbom.json'
+          model-id: 'My Model'
 
 #   SbomResults:
 #     needs: CycloneDX
