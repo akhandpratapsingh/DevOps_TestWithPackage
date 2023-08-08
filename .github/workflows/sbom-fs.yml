@@ -1,4 +1,4 @@
-name: workflowWithCycloneDXAndSbomCustomAction
+name: sbom-fs
 
 on:
   workflow_dispatch:
