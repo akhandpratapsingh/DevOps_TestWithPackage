@@ -1,4 +1,4 @@
-name: workflowWithCycloneDXAndSbomCustomAction
+name: sbom
 
 on:
   workflow_dispatch:
