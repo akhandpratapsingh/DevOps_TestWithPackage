@@ -52,7 +52,7 @@ jobs:
       #     git push
           
       - name: ServiceNow DevOps SBOM Scan Results
-        uses: akhandpratapsingh/custom-actions-task@SBOM-2
+        uses: akhandpratapsingh/custom-actions-task@SBOM
         with:
           devops-integration-user-name: ${{ secrets.SN_DEVOPS_USER }}
           devops-integration-user-password: ${{ secrets.SN_DEVOPS_PASSWORD }}
