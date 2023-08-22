@@ -15,7 +15,7 @@
     "component": {
       "type": "library",
       "bom-ref": "pkg:npm/my-app@0.1.0",
-      "name": "my-app",
+      "name": "my-app-second",
       "version": "0.1.0",
       "description": "DevOps Test with packages",
       "purl": "pkg:npm/my-app@0.1.0"
