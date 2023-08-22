@@ -47,7 +47,7 @@ jobs:
           cd ./
           git config user.name "akhandpratapsingh"
           git config user.email "akhand123singh@gmail.com"
-          git add sbom2.json
+          git add sbom.json
           git commit -m "Add dynamically generated file"
           git push
           
