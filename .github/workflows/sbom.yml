@@ -63,6 +63,18 @@ jobs:
           file-path: './sbom.json'
           model-id: 'My Model'
 
+      - name: ServiceNow DevOps SBOM Scan Results
+        uses: akhandpratapsingh/custom-actions-task@SBOM
+        with:
+          devops-integration-user-name: ${{ secrets.SN_DEVOPS_USER }}
+          devops-integration-user-password: ${{ secrets.SN_DEVOPS_PASSWORD }}
+          instance-url: ${{ secrets.SN_INSTANCE_URL }}
+          tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
+          context-github: ${{ toJSON(github) }}
+          job-name: 'CycloneDX'
+          file-path: './sbom2.json'
+          model-id: 'My Model-2'
+
 #   SbomResults:
 #     needs: CycloneDX
 #     runs-on: ubuntu-latest
