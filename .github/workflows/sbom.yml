@@ -42,14 +42,14 @@ jobs:
           path: ./
           output: 'sbom.json'
           
-      - name: Commit and Push Changes
-        run: |
-          cd ./
-          git config user.name "akhandpratapsingh"
-          git config user.email "akhand123singh@gmail.com"
-          git add sbom.json
-          git commit -m "Add dynamically generated file"
-          git push
+      # - name: Commit and Push Changes
+      #   run: |
+      #     cd ./
+      #     git config user.name "akhandpratapsingh"
+      #     git config user.email "akhand123singh@gmail.com"
+      #     git add sbom.json
+      #     git commit -m "Add dynamically generated file"
+      #     git push
           
       - name: ServiceNow DevOps SBOM Scan Results
         uses: akhandpratapsingh/custom-actions-task@SBOM
