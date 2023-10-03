@@ -24,21 +24,39 @@ jobs:
     - name: Compile
       run: npm run build
 
-  SbomResults:
+  Test:
     needs: build
+    name: Test
     runs-on: ubuntu-latest
-    name: Servicenow SBOM Scan Results
-
+  
     steps:
-       - name: ServiceNow DevOps SBOM Scan Results
-         uses: akhandpratapsingh/custom-actions-task@SBOM
-         with:
-            devops-integration-user-name: ${{ secrets.SN_DEVOPS_USER }}
-#             devops-integration-token: ${{ secrets.SN_DEVOPS_INTEGRATION_TOKEN }}
-            devops-integration-user-password: ${{ secrets.SN_DEVOPS_PASSWORD }}
-            instance-url: ${{ secrets.SN_INSTANCE_URL }}
-            tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
-            context-github: ${{ toJSON(github) }}
-            job-name: 'Servicenow SBOM Scan Results'
-            security-result-attributes: '{"scanner": "Veracode", "applicationName": "Azure", "buildVersion": "v1"}'
-# {"applicationName": "Azure", "buildVersion": "v1"}
+    - name: Checkout
+      uses: actions/checkout@v2
+
+  Deploy:
+    needs: build
+    name: Deploy
+    runs-on: ubuntu-latest
+  
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+#   SbomResults:
+#     needs: build
+#     runs-on: ubuntu-latest
+#     name: Servicenow SBOM Scan Results
+
+#     steps:
+#        - name: ServiceNow DevOps SBOM Scan Results
+#          uses: akhandpratapsingh/custom-actions-task@SBOM
+#          with:
+#             devops-integration-user-name: ${{ secrets.SN_DEVOPS_USER }}
+# #             devops-integration-token: ${{ secrets.SN_DEVOPS_INTEGRATION_TOKEN }}
+#             devops-integration-user-password: ${{ secrets.SN_DEVOPS_PASSWORD }}
+#             instance-url: ${{ secrets.SN_INSTANCE_URL }}
+#             tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
+#             context-github: ${{ toJSON(github) }}
+#             job-name: 'Servicenow SBOM Scan Results'
+#             security-result-attributes: '{"scanner": "Veracode", "applicationName": "Azure", "buildVersion": "v1"}'
+# # {"applicationName": "Azure", "buildVersion": "v1"}
